@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     width: 185px;
-
     border: 1.5px solid var(--color);
     border-radius: 5px;
 }
@@ -13,6 +12,14 @@
     justify-content: center;
     width: 145px;
     height: 37px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+
 }
 
 .closeButton {
