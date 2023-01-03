@@ -1,4 +1,5 @@
 .input:focus {
+
 }
 
 .input {
@@ -11,10 +12,12 @@
 }
 
 .errorInput {
+    color: red;
 }
 
 .errorInput:focus {
 }
 
 .error {
+    color: red;
 }
