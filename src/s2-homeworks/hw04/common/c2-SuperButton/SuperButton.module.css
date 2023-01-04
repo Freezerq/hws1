@@ -1,26 +1,7 @@
 .button {
-    background-color: #0066CC;
-    width: 132px;
-    height: 30px;
-    border-radius: 3px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 555;
-    font-size: 14px;
-    line-height: 20px;
-    color: white;
-    border: none;
+
 }
 
-.button:hover {
-    background-color: #0080FF;
-    width: 167px;
-}
-
-.button:active {
-    background: #0059B3;
-    width: 149px;
-}
 
 .disabled {
 }
@@ -33,10 +14,22 @@
 }
 
 .default {
+    width: 132px;
+    height: 30px;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 555;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    border: none;
+    background-color: blue;
 }
 
 .red {
     background-color: #CC1439;
+
 }
 
 .default:hover {
