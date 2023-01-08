@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding-right: 10px;
 }
 
 .imageAndText {
     display: flex;
     flex-direction: row-reverse;
+
 }
 
 .imageAndText img {

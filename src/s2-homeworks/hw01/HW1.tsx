@@ -1,10 +1,11 @@
 import React from 'react'
 import Message from './message/Message'
 import MessageSender from './message-sender/MessageSender'
-import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import cat1 from './cat1.jpg'
 import cat2 from './cat2.png'
+import classes from './HW1.module.css'
+import s2 from "../../s1-main/App.module.css";
 
 /*
 * 1 - описать тип MessageType
@@ -55,9 +56,9 @@ const HW1 = () => {
     return (
         <div id={'hw1'}>
             <div className={s2.hwTitle}>Homework #1</div>
-            <div className={s2.hw}>
+            <div>
                 {/*проверка отображения (не менять)*/}
-                <div>
+                <div className={classes.mainDiv}>
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
                 </div>

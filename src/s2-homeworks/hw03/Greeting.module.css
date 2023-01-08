@@ -1,5 +1,4 @@
 .greetingForm {
-    margin-left: 30px;
 }
 
 .inputAndButtonContainer {
@@ -60,9 +59,10 @@
 
 .text {
     font-family: 'Montserrat';
+    padding-bottom: 5px;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 17px;
     line-height: 17px;
     margin-top: 20px;
 
