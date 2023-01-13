@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 317px;
     transform: translateX(-100%);
-    transition: transform 1s;
+    transition: transform 1.5s;
 }
 
 .sidebar.open {
@@ -13,11 +13,18 @@
     box-shadow: 0 10px 40px rgba(29, 33, 38, 0.13), 0 1px 2px rgba(29, 33, 38, 0.1);
     z-index: 5;
     transform: translateX(0);
-    transition: transform 1s;
+    transition: transform 1.5s;
 }
 
 .background {
     background-color: gray;
+    background: black;
+    Opacity: 0.3;
+    Position: absolute;
+    Top: 0;
+    Height: 100%;
+    Width: 100%;
+    Z-index: 1;
 }
 
 .nav {
