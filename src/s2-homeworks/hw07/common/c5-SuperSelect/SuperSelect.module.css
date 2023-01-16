@@ -1,9 +1,18 @@
 .select {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .select:focus {
+
 }
 
+.option {
+    display: flex;
+    flex-direction: column;
+}
 
 .option:hover {
+    color: #0066CC;
 }
