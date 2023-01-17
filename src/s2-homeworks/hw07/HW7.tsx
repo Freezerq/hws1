@@ -15,10 +15,12 @@ const arr = [
     { id: 1, value: 'Pre-Junior' },
     { id: 2, value: 'Junior' },
     { id: 3, value: 'Junior +' },
+    { id: 4, value: 'Junior Hey' },
 ]
 
 const HW7 = () => {
-    const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
+    const [value, onChangeOption] = useState<number>(1) // селект и радио должны работать синхронно
+
 
     return (
         <div id={'hw7'}>
@@ -34,6 +36,7 @@ const HW7 = () => {
                             value={value}
                             onChangeOption={onChangeOption}
                             style={{marginRight: '50px'}}
+
                         />
                     </div>
                     <div>

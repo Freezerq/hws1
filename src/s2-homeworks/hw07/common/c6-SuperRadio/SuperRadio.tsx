@@ -35,19 +35,25 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
     ...restProps
 }) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        if (onChangeOption) {
-            onChangeOption(e.currentTarget.id.charAt(e.currentTarget.id.length - 1))
-        }
 
+        if (onChangeOption) {
+            // console.log("RADIO")
+            // console.log(e.currentTarget.id)
+            // onChangeOption(e.currentTarget.id)
+            onChangeOption(Number(e.currentTarget.id.charAt(e.currentTarget.id.length - 1)))
+        }
     }
+
 
     const finalRadioClassName = s.radio + (className ? ' ' + className : '')
     const spanClassName = s.span + (spanProps?.className ? ' ' + spanProps.className : '')
 
     const mappedOptions: any[] = options
         ? options.map((o) => (
+
               <label key={name + '-' + o.id} className={s.label}>
                   <input
+
                       id={id + '-input-' + o.id}
                       className={finalRadioClassName}
                       type={'radio'}
@@ -56,6 +62,18 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
                       value={value}
                       onChange={onChangeCallback}
                       {...restProps}
+
+                      // id={id + '-input-' + o.id}
+                      // className={finalRadioClassName}
+                      // type={'radio'}
+                      // //name={o.id} /// так и не понял зачем name
+                      // checked={o.id === value}
+                      // //value={value}
+                      // // name, checked, value делают студенты
+                      // // http://htmlbook.ru/html/input/name
+                      // //checked={o.id === ...может попробовать значение которое тянем из HW7?}
+                      // onChange={onChangeCallback}
+                      // {...restProps}
                   />
                   <span
                       id={id + '-span-' + o.id}
