@@ -25,8 +25,8 @@ const HW12 = () => {
     const themeId = useSelector<AppStoreType>(store => store.themeId)
     const dispatch = useDispatch()
 
-    const change = (id: string) => { // дописать функцию
-        dispatch(changeThemeId(Number(id)))
+    const change = (id: number) => { // дописать функцию
+        dispatch(changeThemeId(id))
     }
 
     useEffect(() => {
@@ -44,7 +44,7 @@ const HW12 = () => {
                 <SuperSelect
                     id={'hw12-select-theme'}
                     className={s.select}
-                    onChangeOption={(e) => change(String(e))}
+                    onChangeOption={(e) => change(e)}
                     options={themes}
                     // сделать переключение тем
 
