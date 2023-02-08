@@ -1,4 +1,4 @@
-import {legacy_createStore as createStore} from 'redux'
+import {combineReducers, legacy_createStore as createStore} from 'redux'
 
 const initState = {
     themeId: 1
@@ -27,7 +27,13 @@ export const themeReducer = (state = initState, action: SetThemeIdActionType) =>
 
 export const changeThemeId = (id: number): SetThemeIdActionType => ({ type: 'SET_THEME_ID', id})
 
-export type AppStoreType = ReturnType<typeof themeReducer>
-export const store = createStore(themeReducer)
+export type AppStoreType = ReturnType<typeof rootReducer>
+
+export const rootReducer = combineReducers({
+    theme: themeReducer
+})
+
+
+export const store = createStore(rootReducer)
 
 
