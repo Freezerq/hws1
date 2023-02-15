@@ -33,7 +33,7 @@ const HW13 = () => {
 
         axios
             .post(url, {success: x})
-            .then((res) => {
+            .then((r) => {
                 setIsDis(false)
                 setCode('Код 200!')
                 setImage(success200)
