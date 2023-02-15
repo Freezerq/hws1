@@ -34,6 +34,7 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
 
     return (
         <button
+            style={{textAlign: 'center'}}
             disabled={disabled}
             className={finalClassName}
             {...restProps} // отдаём кнопке остальные пропсы если они есть (children там внутри)

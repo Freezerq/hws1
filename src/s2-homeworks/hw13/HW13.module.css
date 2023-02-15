@@ -1,7 +1,23 @@
+* {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+}
+
 .buttonsContainer {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .responseContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 444px;
 }
 
 .imageContainer {
@@ -11,12 +27,24 @@
 }
 
 .textContainer{
+    width: 510px;
+    margin-bottom: 20px;
 }
 
 .code {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .text {
+    font-size: 24px !important;
+    font-weight: 525;
+
 }
 .info {
+    font-size: 40px;
+
+    font-weight: 600;
+
 }
